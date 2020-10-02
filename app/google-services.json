@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "473396998410",
+    "firebase_url": "https://availappcheck-87930.firebaseio.com",
+    "project_id": "availappcheck-87930",
+    "storage_bucket": "availappcheck-87930.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:473396998410:android:9391cd7eba379627ca4af3",
+        "android_client_info": {
+          "package_name": "com.example.availappcheck"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "473396998410-tk25pudhr08lnrsnlf0vv982c949jsma.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDGy4jbHGuhD-SL9pjo5xoonJ2IVlltwyA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "473396998410-tk25pudhr08lnrsnlf0vv982c949jsma.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
