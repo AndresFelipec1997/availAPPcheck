@@ -88,6 +88,26 @@ class registrarNegocio : AppCompatActivity() {
                 }}}
     }
 
+    private fun subirImagenFirebase(){
+        if (selectedPhotoUri==null) return
+        val filename = UUID.randomUUID().toString()
+        val ref=FirebaseStorage.getInstance().getReference("/imagenes/$filename")
+        ref.putFile(selectedPhotoUri!!)
+            .addOnSuccessListener {
+                Log.d("registrarNegocio", "subida con exito ${it.metadata?.path}")
+
+                ref.downloadUrl.addOnSuccessListener {
+                    // it.toString()
+                    Log.d("registrarNegocio", "url de la imagen $it" )
+                    Log.d("url","url guardada $rl")
+                    crearNuevaCuenta(it.toString())
+                }
+
+
+            }
+
+    }
+
     private fun crearNuevaCuenta(imageb: String){
         val nombre:String=nombrenegocio.text.toString()
         val direccion:String=direccionnegocio.text.toString()
@@ -150,27 +170,7 @@ class registrarNegocio : AppCompatActivity() {
         }
 
     }
-    private fun subirImagenFirebase(){
-        if (selectedPhotoUri==null) return
-        val filename = UUID.randomUUID().toString()
-        val ref=FirebaseStorage.getInstance().getReference("/imagenes/$filename")
-        ref.putFile(selectedPhotoUri!!)
-            .addOnSuccessListener {
-                Log.d("registrarNegocio", "subida con exito ${it.metadata?.path}")
 
-               ref.downloadUrl.addOnSuccessListener {
-                    // it.toString()
-                   Log.d("registrarNegocio", "url de la imagen $it" )
-
-                   crearNuevaCuenta(it.toString())
-                }
-
-               Log.d("url","url guardada $rl")
-            }
-
-
-
-    }
     private fun accion(){
 
         val intent = Intent(this, PrincipalScreen::class.java)
