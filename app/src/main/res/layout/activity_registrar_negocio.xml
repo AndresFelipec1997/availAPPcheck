@@ -5,11 +5,24 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/azuljpg"
-    tools:context=".RegisterActivity2">
 
+    tools:context=".registrarNegocio">
+
+    <ImageButton
+        android:id="@+id/imagebuton"
+        android:layout_width="223dp"
+        android:layout_height="197dp"
+        android:background="@drawable/fotoredonda"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.031"
+        app:srcCompat="@drawable/pngwing" />
 
     <EditText
-        android:id="@+id/txtnombre"
+        android:id="@+id/nombrenegocio"
         android:layout_width="305dp"
         android:layout_height="56dp"
         android:background="@drawable/bordesredondos"
@@ -19,28 +32,30 @@
         android:paddingLeft="25dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.384"
+        app:layout_constraintHorizontal_bias="0.311"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.118" />
+        app:layout_constraintVertical_bias="0.379" />
+
 
     <TextView
         android:id="@+id/textView4"
         android:layout_width="139dp"
         android:layout_height="34dp"
+        android:layout_marginTop="220dp"
         android:text="Nombre :"
         android:textColor="#0B0A0A"
         android:textSize="18sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/txtnombre"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.176"
+        app:layout_constraintHorizontal_bias="0.15"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="1.0" />
 
     <EditText
-        android:id="@+id/txtapellido"
+        android:id="@+id/direccionnegocio"
         android:layout_width="305dp"
         android:layout_height="56dp"
         android:background="@drawable/bordesredondos"
@@ -50,45 +65,29 @@
         android:paddingLeft="25dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.389"
+        app:layout_constraintHorizontal_bias="0.311"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.289" />
-
-
-    <EditText
-        android:id="@+id/txtcedula"
-        android:layout_width="305dp"
-        android:layout_height="56dp"
-        android:background="@drawable/bordesredondos"
-        android:ems="10"
-        android:hint="cedula"
-        android:inputType="number"
-        android:paddingLeft="25dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.389"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.455" />
+        app:layout_constraintVertical_bias="0.54" />
 
     <TextView
         android:id="@+id/textView5"
         android:layout_width="139dp"
         android:layout_height="34dp"
+        android:layout_marginTop="16dp"
         android:text="Apellido :"
         android:textColor="#0B0A0A"
         android:textSize="18sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/txtapellido"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.176"
+        app:layout_constraintHorizontal_bias="0.15"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtnombre"
+        app:layout_constraintTop_toBottomOf="@+id/nombrenegocio"
         app:layout_constraintVertical_bias="1.0" />
 
     <EditText
-        android:id="@+id/txtemail"
+        android:id="@+id/emailnegocio"
         android:layout_width="305dp"
         android:layout_height="56dp"
         android:background="@drawable/bordesredondos"
@@ -98,26 +97,11 @@
         android:paddingLeft="25dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.39"
+        app:layout_constraintHorizontal_bias="0.386"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.61" />
+        app:layout_constraintVertical_bias="0.674" />
 
-    <TextView
-        android:id="@+id/textView6"
-        android:layout_width="139dp"
-        android:layout_height="34dp"
-        android:layout_marginTop="44dp"
-        android:text="Cedula :"
-        android:textColor="#0B0A0A"
-        android:textSize="18sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/txtcedula"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.183"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtapellido"
-        app:layout_constraintVertical_bias="1.0" />
 
     <TextView
         android:id="@+id/textView3"
@@ -129,13 +113,13 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/txtemail"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.183"
+        app:layout_constraintHorizontal_bias="0.176"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtapellido"
+        app:layout_constraintTop_toBottomOf="@+id/direccionnegocio"
         app:layout_constraintVertical_bias="1.0" />
 
-
     <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayout2"
         android:layout_width="305dp"
         android:layout_height="56dp"
         android:layout_marginStart="48dp"
@@ -146,12 +130,12 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.778"
+        app:layout_constraintVertical_bias="0.822"
         app:passwordToggleEnabled="true"
         tools:ignore="MissingConstraints">
 
         <EditText
-            android:id="@+id/EdidTextContraseña"
+            android:id="@+id/contraseñanegocio"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:background="@drawable/bordesredondos"
@@ -176,37 +160,45 @@
         android:textColor="#0B0A0A"
         android:textSize="18sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/textInputLayout2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.176"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txtemail"
-        app:layout_constraintVertical_bias="0.106" />
+        app:layout_constraintVertical_bias="0.063" />
 
     <Button
-        android:id="@+id/buttoncrear"
+        android:id="@+id/crearbuton"
         android:layout_width="249dp"
         android:layout_height="44dp"
         android:background="#BFF7FF"
         android:text="crear cuenta"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.45"
+        app:layout_constraintHorizontal_bias="0.407"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.883" />
+        app:layout_constraintVertical_bias="0.949" />
 
     <TextView
         android:id="@+id/textView"
         android:layout_width="302dp"
         android:layout_height="27dp"
-        android:layout_marginTop="10dp"
         android:text="Nota: la contraseña debe ser mayor a 7 dígitos."
         app:layout_constraintBottom_toTopOf="@+id/buttoncrear"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.559"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/EdidTextContraseña"
+        app:layout_constraintTop_toBottomOf="@+id/crearbuton"
         app:layout_constraintVertical_bias="0.058" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/circleimageview"
+        android:layout_width="223dp"
+        android:layout_height="197dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imagebuton"
+        app:layout_constraintEnd_toEndOf="@+id/imagebuton"
+        app:layout_constraintStart_toStartOf="@+id/imagebuton"
+        app:layout_constraintTop_toTopOf="@+id/imagebuton" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

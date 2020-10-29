@@ -7,11 +7,26 @@
     android:background="@drawable/gris"
     tools:context=".PrincipalScreen">
 
+    <TextView
+        android:id="@+id/textnegocio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="MI NEGOCIO"
+        android:textColor="#090909"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.261"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.705" />
+
     <Button
         android:id="@+id/cerrar"
         android:layout_width="128dp"
         android:layout_height="26dp"
-        android:background="#838383"
+        android:background="#4A838383"
         android:text="cerrar sesion"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -24,7 +39,10 @@
         android:id="@+id/emailView"
         android:layout_width="228dp"
         android:layout_height="32dp"
+        android:gravity="center"
         android:text="TextView"
+        android:textColor="#0C0C0C"
+        android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.153"
@@ -32,14 +50,70 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.022" />
 
-    <TextView
-        android:id="@+id/nombreView"
-        android:layout_width="252dp"
-        android:layout_height="50dp"
-        android:layout_marginBottom="132dp"
-        android:text="TextView"
+    <ImageButton
+        android:id="@+id/registrarnegocioboton"
+        android:layout_width="155dp"
+        android:layout_height="155dp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/emailView"
-        app:layout_constraintVertical_bias="0.126"
-        tools:layout_editor_absoluteX="80dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.152"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.189"
+        app:srcCompat="@drawable/registrar" />
+
+    <ImageButton
+        android:id="@+id/imageButton2"
+        android:layout_width="155dp"
+        android:layout_height="155dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.8"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.553"
+        app:srcCompat="@drawable/store" />
+
+    <ImageButton
+        android:id="@+id/imageButton3"
+        android:layout_width="155dp"
+        android:layout_height="155dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.195"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.925"
+        app:srcCompat="@drawable/minegocio" />
+
+    <TextView
+        android:id="@+id/textregistrar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="REGISTRAR NEGOCIO"
+        android:textColor="#090909"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.119"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.103" />
+
+    <TextView
+        android:id="@+id/texestado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="VER ESTASDO DE NEGOCIO"
+        android:textColor="#090909"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.913"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.417" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,12 +1,10 @@
 package com.example.availappcheck
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import androidx.appcompat.app.AlertDialog
 import com.google.firebase.auth.FirebaseAuth
-import kotlinx.android.synthetic.main.activity_login.*
 import kotlinx.android.synthetic.main.activity_principal_screen.*
-import kotlinx.android.synthetic.main.activity_register2.*
 
 class PrincipalScreen : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -16,10 +14,13 @@ class PrincipalScreen : AppCompatActivity() {
         val bundle: Bundle? = intent.extras
         var email: String? = bundle?.getString("email")
 
-        val nombre: String? = bundle?.getString("nombre")
+        setup(email ?: "")
 
-        setup(email ?: "", nombre ?: "")
+        registrarnegocioboton.setOnClickListener {
 
+            val intent= Intent(this,registrarNegocio::class.java)
+            startActivity(intent)
+        }
 
         cerrar.setOnClickListener() {
 
@@ -31,10 +32,10 @@ class PrincipalScreen : AppCompatActivity() {
 
     }
 
-    private fun setup(email: String?, nombre: String) {
+    private fun setup(email: String?) {
         title = "inicio"
         emailView.text = email
-        nombreView.text = nombre
+
 
 
     }
