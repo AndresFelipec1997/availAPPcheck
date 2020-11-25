@@ -5,7 +5,9 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.appcompat.app.AlertDialog
 import com.google.firebase.auth.FirebaseAuth
+import com.google.firebase.database.FirebaseDatabase
 import kotlinx.android.synthetic.main.activity_login.*
+
 
 class LoginActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -25,7 +27,10 @@ class LoginActivity : AppCompatActivity() {
            else if( editTextTextPersonName.text.isNotEmpty() &&  EdidTextContraseña.text.isNotEmpty() ){
                 FirebaseAuth.getInstance().signInWithEmailAndPassword(editTextTextPersonName.text.toString(),EdidTextContraseña.text.toString()).addOnCompleteListener {
 
-                    if(it.isSuccessful){
+                    val ref= FirebaseDatabase.getInstance().getReference("/User")
+
+                      if(it.isSuccessful){
+
                         home( it.result?.user?.email ?:"", it.result?.user?.displayName ?:"", )
 
 
@@ -34,6 +39,7 @@ class LoginActivity : AppCompatActivity() {
                         showAlet()
 
                     }
+
                 }
 
             }
@@ -68,4 +74,8 @@ class LoginActivity : AppCompatActivity() {
 
 
 
+
+
+
 }
+

@@ -9,7 +9,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".registrarNegocio"></activity>
+        <activity android:name=".MiNegocio"></activity>
+        <activity android:name=".ListaNegocio" />
+        <activity android:name=".registrarNegocio" />
         <activity android:name=".PrincipalScreen" />
         <activity android:name=".LoginActivity" />
         <activity android:name=".RegisterActivity2" />

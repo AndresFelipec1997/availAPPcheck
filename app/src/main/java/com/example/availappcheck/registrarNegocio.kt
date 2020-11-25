@@ -5,6 +5,7 @@ import android.content.Intent
 import android.graphics.drawable.BitmapDrawable
 import android.net.Uri
 import android.os.Bundle
+import android.os.Parcelable
 import android.provider.MediaStore
 import android.text.TextUtils
 import android.util.Log
@@ -12,13 +13,12 @@ import android.widget.EditText
 import android.widget.Toast
 import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
-import com.google.android.gms.tasks.OnFailureListener
-import com.google.android.gms.tasks.OnSuccessListener
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.FirebaseUser
 import com.google.firebase.database.DatabaseReference
 import com.google.firebase.database.FirebaseDatabase
 import com.google.firebase.storage.FirebaseStorage
+import kotlinx.android.parcel.Parcelize
 import kotlinx.android.synthetic.main.activity_registrar_negocio.*
 import java.util.*
 
@@ -220,6 +220,12 @@ class registrarNegocio : AppCompatActivity() {
 
     }
 
+@Parcelize
+class Negocio(val uid: String, val nombre: String, val direccion: String, val correo: String, val imagen: String):
+    Parcelable {
+
+    constructor(): this("","","","","")
+}
 
 
 

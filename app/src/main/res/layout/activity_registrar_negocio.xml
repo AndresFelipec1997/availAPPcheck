@@ -19,7 +19,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.031"
-        app:srcCompat="@drawable/pngwing" />
+        app:srcCompat="@drawable/select" />
 
     <EditText
         android:id="@+id/nombrenegocio"
@@ -75,7 +75,7 @@
         android:layout_width="139dp"
         android:layout_height="34dp"
         android:layout_marginTop="16dp"
-        android:text="Apellido :"
+        android:text="Direccion :"
         android:textColor="#0B0A0A"
         android:textSize="18sp"
         android:textStyle="bold"
@@ -107,7 +107,7 @@
         android:id="@+id/textView3"
         android:layout_width="139dp"
         android:layout_height="34dp"
-        android:text="Email :"
+        android:text="Correo :"
         android:textColor="#0B0A0A"
         android:textSize="18sp"
         android:textStyle="bold"
@@ -185,11 +185,11 @@
         android:layout_width="302dp"
         android:layout_height="27dp"
         android:text="Nota: la contraseña debe ser mayor a 7 dígitos."
-        app:layout_constraintBottom_toTopOf="@+id/buttoncrear"
+        app:layout_constraintBottom_toTopOf="@+id/crearbuton"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.559"
+        app:layout_constraintHorizontal_bias="0.403"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/crearbuton"
+        app:layout_constraintTop_toBottomOf="@+id/textInputLayout2"
         app:layout_constraintVertical_bias="0.058" />
 
     <de.hdodenhof.circleimageview.CircleImageView
